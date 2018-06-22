@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Viewport -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <title>GOT services</title>
+</head>
+
+<body>
+
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand mr-auto logo" href="./index.html"><img src="img/icon.png" height="30" width="41"></a>
+                    <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./donate.html"><span class="fa fa-dollar fa-lg"></span> Donate</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="./offers.html"><span class="fa fa-tags fa-lg"></span> Offers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        </ul>
+                        <span hidden class="navbar-text btn" >
+                                <a data-toggle="modal" data-target="#loginModal">
+                                <span class="fa fa-sign-in"></span> Login</a>
+                        </span>
+                    </div>            
+                </div>
+        </nav>
+
+        <div id="loginModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg" role="content">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Login </h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-4">
+                                            <label class="sr-only" for="exampleInputphone3">Phone no.</label>
+                                            <input type="tel" class="form-control form-control-sm mr-1" id="exampleInputphone3" placeholder="Enter Phone no.">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                        <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-auto">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label"> Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <header class="jumbotron">
+                <div class="container">
+                    <div class="row row-header">
+                        <div class="col-12 col-sm-6">
+                            <br><br>
+                            <img style="filter: drop-shadow(20px -20px 4px #555555);"  src="img/titles.png" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm-3 align-self-center">
+                            <img src="img/man.png" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm-3 align-self-center">
+                            <a role="button" class="btn" data-toggle="modal" data-target="#registermodal"><img src="./img/Register-Now.png" id="testimg" class=" img-fluid"></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div id="registermodal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Register</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                    <!--<form>                           
+                                            <div class="form-group row">
+                                                <label for="datetime" class="col-12 col-sm-2 col-form-label"><strong>Section</strong></label>
+                                                <div class="col-12 col-sm-10">
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        
+                                                        <label class="btn btn-success active">
+                                                            <input type="radio" name="options" id="option1" autocomplete="off" checked> section 1
+                                                        </label>
+                                                        
+                                                        <label class="btn btn-danger">
+                                                            <input type="radio" name="options" id="option2" autocomplete="off"> section 2
+                                                        </label>
+                                                        
+                                                    </div>
+            
+                                                </div>
+                                            </div>
+            
+                                            <div class="form-group row">
+                                                <label for="datetime" class="col-12 col-sm-2 col-form-label"><strong>Date and Time</strong></label>
+                                                <div class="col-12 col-sm-4">
+                                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                                                </div>
+                                                <div class="col-12 col-sm-4">
+                                                    <input type="time" class="form-control" id="time" name="time" placeholder="Time">
+                                                </div>
+                                                        
+                                            </div>
+                    
+                                            <div class="form-group row">
+                                                <div class="col-12 offset-sm-2">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                    <button type="submit" class="btn btn-primary">Register</button>
+                                                </div>
+                                            </div>
+                                                
+                                        </form>-->
+                                        <h2>Guidelines For Registration : </h2>
+                                        <p>
+                                                1. Download the  <strong>GOT SERVICES</strong>  app from the <strong>Google play store</strong>.<br><img style="max-height: 500px" class="img img-thumbnail img-fluid" src="img/register/1.png">
+                                            <br>2. Create your account with the mobile number through which you will be paying for the subscription through  Paytm. <br><img style="max-height: 500px" class="img img-thumbnail img-fluid" src="img/register/2.png">
+                                            <br>3. Complete the account setup. Now after this your account will be  created. <img style="max-height: 500px" class="img img-thumbnail img-fluid" src="img/register/3.png">
+                                            <br>4. Choose your <a href="aboutus.html#category">category</a> and proceed according to the guidelines. <img style="max-height: 500px" class="img img-thumbnail img-fluid" src="img/register/4.png">
+                                            <br>5. Rest all the information is in <a href="aboutus.html#tandc">Terms and Conditions</a>.
+                                            <br>6. Then read <a href="offers.html#payment">Payment Method</a>. <br> <img style="max-height: 500px" class="img img-thumbnail img-fluid" src="img/register/5.png">
+                                        </p>
+                                 
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">Offers</li>
+            </ol>
+            <div class="col-12">
+               <h3>Offers</h3>
+               <hr>
+            </div>
+        </div>
+
+        <div class="row row-content">
+              
+                <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#customer"
+                          role="tab" data-toggle="tab">Customer</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#serviceprovider" role="tab"
+                          data-toggle="tab">Service Provider</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#advertising" role="tab"
+                          data-toggle="tab">Advertisements</a>
+                      </li>
+                  </ul>
+                
+                  <div class="tab-content">
+                     
+                      <div role="tabpanel" id="customer" class="tab-pane fade show active">
+                          <h3>For<small> Customers :</small></h3>
+                          <p class="d-block"> 
+                                <br>₹ 49&nbsp;&nbsp;&nbsp; _____________________ &nbsp;6 &nbsp;&nbsp;G-Deals &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <br>₹ 99&nbsp;&nbsp;&nbsp; _____________________ &nbsp;12 G-Deals                                                                                                              
+                                <br>₹ 129&nbsp; _____________________ &nbsp;15 G-Deals  
+                                <br>₹ 149&nbsp; _____________________ &nbsp;18 G-Deals
+                                <br>₹ 199&nbsp; _____________________ &nbsp;25 G-Deals  
+                              </p>
+                      </div>
+                     
+                      <div role="tabpanel" id="serviceprovider" class="tab-pane fade">
+                          <h3>For<small> Service Providers :</small></h3>
+                          <p class="d-block"> 
+                                <br>₹ 99&nbsp;&nbsp;&nbsp; _____________________ &nbsp;5 &nbsp;&nbsp;G-Deals &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <br>₹ 149&nbsp; _____________________ &nbsp;8 &nbsp;&nbsp;G-Deals                                                                                                              
+                                <br>₹ 199&nbsp; _____________________ &nbsp;12 G-Deals  
+                                <br>₹ 249&nbsp; _____________________ &nbsp;15 G-Deals
+                                <br>₹ 299&nbsp; _____________________ &nbsp;20 G-Deals  
+                              </p>
+                      </div>
+                     
+                      <div role="tabpanel" id="advertising" class="tab-pane fade">
+                          <h3>For<small> Advertisements :</small></h3>
+                          <p class="d-block"> 
+                              <br>
+                                 <h5>₹ 49 / Day &nbsp;<span class="badge badge-danger">Trending</span></h5>
+                            
+                                ₹ 49&nbsp;&nbsp;&nbsp; _____________________ &nbsp;5 &nbsp;&nbsp;Days &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <br>₹ 99&nbsp;&nbsp;&nbsp; _____________________ &nbsp;12 Days                                                                                                              
+                                <br>₹ 149&nbsp; _____________________ &nbsp;18 Days
+                                <br>₹ 199&nbsp; _____________________ &nbsp;25 Days 
+                              </p>
+                      </div>
+                     
+                      </div>
+             </div>
+
+        <div id="payment" class="row row-content">
+            <h3>How to buy a Subscription</h3>
+            <p>
+                <br>
+                1. Choose your offer.
+                <br>
+                2. Pay that amount through paytm from your registered mobile number on - <a href="#"><strong>9719978808</strong></a>
+                <br>
+                3. After that, SMS your order details from your registered mobile number confirming your order immediately after the payment in the given format:
+                <br>
+                MOBILE NUMBER      : ......
+                <br>
+                PAYMENT AMOUNT     : ......
+                <br>
+                CATEGORY           : ......
+                <br>
+                SUBSCRIPTION OFFER : ......
+                <br><br>
+                Or pay through cash at : 
+                <br><br>
+                Meenakshi Fashion Jwellery,<br>
+                Oppossite Gandhi Balniketan School,<br>
+                East Amber Talab,<br>
+                Roorkee
+                <br><br>
+                Maa Durga Telecom,<br>
+                Near Siddarth Hotel,<br>
+                Ramnagar Chowk,<br>
+                Roorkee
+                <br><br>
+                Monday to Thursday - 9am to 6pm<br>
+                Friday             - 8am to 1pm<br>
+                Saturday           - holiday<br>
+                Sunday             - 3pm to 6pm<br><br>
+                <strong>Don't forgot to take payment slip in case of cash payment.</strong>
+            </p>
+        </div>
+
+    </div>
+    
+
+    
+  
+
+    <footer class="footer foot"> 
+            <div class="container">
+                <div class="row">             
+                        <div class="col-4 offset-1 col-sm-2">
+                                <h5><strong>Links</strong></h5>
+                                <ul class="list-unstyled ">
+                                        <li><a style="color:#d9ebff;font-size: 16px" href="./index.html">Home</a></li>
+                                        <li><a style="color:#d9ebff;font-size: 16px" href="./aboutus.html">About</a></li>
+                                        <li><a style="color:#d9ebff;font-size: 16px" href="./donate.html">Donate</a></li>
+                                        <li><a style="color:#d9ebff;font-size: 16px" href="./offers.html">Offers</a></li>
+                                        <li><a style="color:#d9ebff;font-size: 16px" href="./contactus.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-7 col-sm-3">
+                                <h5><strong>Our Address</strong></h5>
+                                <address style="color:#d9ebff;font-size: 16px;">327
+                                        <br>
+                                        Saket Nagar         
+                                        <br>
+                                        Roorkee<br>
+                                      <i style=" font-size:small" class="fa fa-phone fa-lg">: <a style="color:#d9ebff" href="tel:+918011991156">+91 8279790227</a></i><br>
+                                      <i style=" font-size:small" class="fa fa-phone fa-lg">: <a style="color:#d9ebff" href="tel:+918279790227">+91 8011991156</a></i><br>
+                                      <i class="fa fa-envelope fa-lg"></i>: <a style="color:#d9ebff;" href="mailto:got.services.01@gmail.com">got.services.01@gmail.com</a>
+                                   </address>
+                            </div>
+                    <div class="col-12 col-sm-6 align-self-center">
+                            <div class="text-center">
+                                    <a class="btn" href="mailto:got.services.01@gmail.com"><img style="max-height: 50px" src="./img/gmail.png"></a>
+                                    <a class="btn" href="https://www.facebook.com/pg/GOT-services-1592523064179374"><img style="max-height: 50px" src="./img/facebook.png"></a>
+                                    <a class="btn" href="https://twitter.com/ServicesGot"><img style="max-height: 50px" src="./img/twitter.png"></a>
+                                    <a class="btn" href="https://www.linkedin.com/company/got-services/"><img style="max-height: 50px" src="./img/linkedin.png"></a>
+                                    <a class="btn" href="https://www.instagram.com/gotservices/?hl=en"><img style="max-height: 57px" src="./img/instagram.png"></a>
+                                    <a class="btn" href="https://play.google.com/store/apps/details?id=com.GOT.login1"><img src="./img/playstore.png"></a>                                
+                                    
+                                </div>
+                        </div>
+               </div>
+               <div class="row justify-content-center">             
+                    <div class="col-auto">
+                        <br><p>© Copyright 2018 GOT Services</p>
+                    </div>
+               </div>
+            </div>
+        </footer>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./node_modules/jquery/src/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="./node_modules/jquery/src/jquery.glow.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){	
+        $("#testimg2").glow({ radius: "10", color:"green" });    
+        //Blink with time Interval (timegap)
+        $("#testimg").glow({ radius: "16", color: "orange", disable: true, blink: true, timegap: 500 });
+    });
+    </script>	
+</body>
+
+</html>
